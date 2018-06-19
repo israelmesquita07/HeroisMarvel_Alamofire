@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Teste commit")
     }
     
     override func viewWillAppear(_ animated: Bool) {
