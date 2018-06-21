@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  HeroisMarvel
 //
-//  Created by Eric Brito on 22/10/17.
-//  Copyright © 2017 Eric Brito. All rights reserved.
+//  Created by Israel3D.
+//  Copyright © 2018 Israel3D. All rights reserved.
 //
 
 import UIKit
