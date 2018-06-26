@@ -12,7 +12,7 @@ import Alamofire
 
 class MarvelAPI {
     
-    static private let basepath = "https://gateway.marvel.com/v1/public/characters?"
+    static private let basepath = "http://gateway.marvel.com/v1/public/characters?"
     static private let privateKey = "cd00c969a6285e3cc4992ff41ea4f4c8b3a42ddc"
     static private let publicKey = "2bb07766e1619e2a92851dab2427de2b"
     static private let limit = 50
@@ -44,7 +44,7 @@ class MarvelAPI {
     
     private class func getCredentials() -> String {
         let ts = String(Date().timeIntervalSince1970)
-        let hash = MD5(ts+privateKey+publicKey)
+        let hash = MD5(ts+privateKey+publicKey).lowercased()
         return "ts=\(ts)&apikey=\(publicKey)&hash=\(hash)"
     }
     
